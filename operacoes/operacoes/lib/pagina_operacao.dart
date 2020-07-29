@@ -14,7 +14,7 @@ import 'package:flutter/material.dart';
         @override
         void initState() {
         super.initState();
-        resultado = 'Resultado: ';
+        resultado = 'Resultado da Operação: ';
         }
 
         @override
@@ -137,7 +137,7 @@ import 'package:flutter/material.dart';
                   onPressed: (){
                     setState(() {
                       resultado = int.parse(_primeiro_valor.text) + int.parse(_segundo_valor.text);
-                      resultado = 'O resultado da Soma é: $resultado';
+                      resultado = 'O Resultado da Soma é: $resultado';
                     }
                     );
                 }
@@ -152,7 +152,7 @@ import 'package:flutter/material.dart';
                   onPressed: (){
                    setState(() {
                      resultado = int.parse(_primeiro_valor.text) - int.parse(_segundo_valor.text);
-                      resultado = 'O resultado da Subtração é: $resultado';
+                      resultado = 'O Resultado da Subtração é: $resultado';
                     });   
                 }
                 ),
@@ -176,7 +176,7 @@ import 'package:flutter/material.dart';
                     onPressed: (){
                     setState(() {
                       resultado = int.parse(_primeiro_valor.text) * int.parse(_segundo_valor.text);
-                      resultado = 'O resultado da Multiplicação é: $resultado';
+                      resultado = 'O Resultado da Multiplicação é: $resultado';
                     });
                 }
                 ),
@@ -190,7 +190,7 @@ import 'package:flutter/material.dart';
                   onPressed: (){
                     setState(() {
                       resultado = int.parse(_primeiro_valor.text) / int.parse(_segundo_valor.text);
-                      resultado = 'O resultado da Divisão é: $resultado';
+                      resultado = 'O Resultado da Divisão é: $resultado';
                     });
                 }
                 ),
