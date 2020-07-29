@@ -27,7 +27,7 @@ class _MinhaTelaState extends State<MinhaTela> {
         width: 200,
         height: 200,
         color: Colors.white,
-        child: Center (child: Text("América")
+        child: Center (child: Text("Inter")
         ),
       ),
 
