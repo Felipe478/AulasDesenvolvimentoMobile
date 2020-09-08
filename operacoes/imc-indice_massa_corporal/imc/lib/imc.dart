@@ -11,6 +11,8 @@ class _CalculadoraIMCState extends State<CalculadoraIMC> {
         TextEditingController _peso = TextEditingController(); 
         
         var imc;
+        String _fraseIMC = '';
+
         AssetImage foto = AssetImage('imagens/Corpo.png');
 
         @override
@@ -128,32 +130,28 @@ class _CalculadoraIMCState extends State<CalculadoraIMC> {
                         onPressed: () {
                         setState(() {
                           imc = double.parse(_peso.text) / ((double.parse(_altura.text)) * (double.parse(_altura.text)));
-
+                           
                           if(imc < 20.7) {
-                            foto = AssetImage('imagens/Abaixo_Peso.png');
-                            imc = imc.toStringAsFixed(3);
-                            imc =  'Abaixo do Peso: Seu IMC é $imc';
+                            foto = AssetImage('imagens/Abaixo_Peso.png');                           
+                            _fraseIMC =  ': Abaixo do Peso';
                           }
                           else if ((imc >= 20.7) && (imc <= 26.4)) {
-                            foto = AssetImage('imagens/Peso_Normal.png');
-                            imc = imc.toStringAsFixed(3);
-                            imc =  'No Peso Normal: Seu IMC é $imc';
+                            foto = AssetImage('imagens/Peso_Normal.png');                            
+                            _fraseIMC =  ': No Peso Normal';
                           }
                            else if ((imc > 26.4) && (imc <= 27.8)) {
-                            foto = AssetImage('imagens/Marginalmente_Acima.png');
-                            imc = imc.toStringAsFixed(3);
-                            imc =  'Marginalmente acima do peso: Seu IMC é $imc';
+                            foto = AssetImage('imagens/Marginalmente_Acima.png');                           
+                            _fraseIMC =  ': Marginalmente acima do peso';
                           }
                            else if ((imc > 27.8) && (imc <= 31.1)) {
-                            foto = AssetImage('imagens/Acima_Peso.png');
-                            imc = imc.toStringAsFixed(3);
-                            imc =  'Acima do peso ideal: Seu IMC é $imc';
+                            foto = AssetImage('imagens/Acima_Peso.png');                            
+                            _fraseIMC =  ': Acima do peso ideal';
                           }
                            else if (imc > 31.1) {
-                            foto = AssetImage('imagens/Obeso.png');
-                            imc = imc.toStringAsFixed(3);
-                            imc =  'Obeso: Seu IMC é $imc';
+                            foto = AssetImage('imagens/Obeso.png');                            
+                             _fraseIMC =  ': Obeso';
                           }
+                          imc = imc.toStringAsFixed(3);
 
                         });
                     },
@@ -182,14 +180,13 @@ class _CalculadoraIMCState extends State<CalculadoraIMC> {
                   color: Colors.transparent,
                 ),
 
-                Text(imc.toString(),
+                Text(imc.toString() + _fraseIMC,
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
                 ),
                 ),
-
         
 
                 ],
