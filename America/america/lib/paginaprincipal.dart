@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:america/pergunta1.dart';
 
-import 'SobreOJogo.dart';
-
 class America extends StatefulWidget {
   @override
   _AmericaState createState() => _AmericaState();
@@ -28,15 +26,15 @@ class _AmericaState extends State<America> {
           color: Colors.green[600],
           child: SingleChildScrollView(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset('imagens/QuizDoFutebol.png',
-                    height: 200,
-                    width: 200,),
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset('imagens/QuizDoFutebol.png',
+                        height: 200,
+                        width: 200,),
 
-                    Divider(
-                      height: 10,
-                      color: Colors.transparent,
+                      Divider(
+                        height: 10,
+                        color: Colors.transparent,
                     ),
 
                     Container(
@@ -46,40 +44,43 @@ class _AmericaState extends State<America> {
                         border: Border.all(width: 3),
                         borderRadius: BorderRadius.all(Radius.circular(8))
                       ),
+
                       child: Text('O QUIZ DO FUTEBOL é um aplicativo em forma de Quiz desenvolvido pelos alunos: Laura Marqueti e Felipe de ' + 
                       'Mattos. Ele faz parte do Método de Avaliação do 1º Bimestre da Disciplina de Desenvolvimento para Dispositivos ' +
                       ' Móveis sob a orientação do Professor Ricieri Massariol, dos quais foram abordados e utilizados diversos elementos da ' +
                       'Linguagem de Programação Dart utilizada para o Desenvolvimento em Flutter, exemplos desses pode-se citar: Passagem de Parâmetos ' +
                       ' entre as telas, os Métodos InitState() e SetState(), utilização de Container, Column, Row (propriedades específicas do Flutter), ' +
                       ' além das Estruturas de Programação, como Métodos, Vetores e a manipulação das Variáveis.',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
+                        textAlign: TextAlign.justify,
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
                       ),
                       ),
+
                     ),
                     Row(
-             children: [
-               Expanded(child: 
-               RaisedButton(
-                 color: Colors.white,
-                 child: 
-                 Text('INÍCIO',
-                 style: TextStyle(
-                   color: Colors.green,
-                   fontWeight: FontWeight.bold,
-                   fontSize: 20,
-                 ),
-                 ),
+                      children: [
+                        Expanded(child: 
+                          RaisedButton(
+                            color: Colors.white,
+                            child: 
+                              Text('INÍCIO',
+                                style: TextStyle(
+                                color: Colors.green,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                                ),
+                               ),
                  onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => America()));
-               }))
+               }
+               )
+               )
              ],
            ),
-
-                  ]
-                  ),
+              
+              ] ),
           ),
   ),
 
