@@ -206,7 +206,7 @@ class _AmericaState extends State<America> {
           iconSize: 40,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home,
+              icon: Icon(Icons.sort,
               color: Colors.green[600],),
               title: Text('Projeto',
               style: TextStyle(
@@ -214,7 +214,7 @@ class _AmericaState extends State<America> {
               ),),           
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.home,
+              icon: Icon(Icons.dvr,
                color: Colors.green[400],),
               title: Text('Sobre',
               style: TextStyle(
