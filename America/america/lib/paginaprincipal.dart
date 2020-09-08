@@ -47,7 +47,7 @@ class _AmericaState extends State<America> {
 
                       child: Text('O QUIZ DO FUTEBOL é um aplicativo em forma de Quiz desenvolvido pelos alunos: Laura Marqueti e Felipe de ' + 
                       'Mattos. Ele faz parte do Método de Avaliação do 1º Bimestre da Disciplina de Desenvolvimento para Dispositivos ' +
-                      ' Móveis sob a orientação do Professor Ricieri Massariol, dos quais foram abordados e utilizados diversos elementos da ' +
+                      ' Móveis sob a orientação do Professor Riciere Massariol, dos quais foram abordados e utilizados diversos elementos da ' +
                       'Linguagem de Programação Dart utilizada para o Desenvolvimento em Flutter, exemplos desses pode-se citar: Passagem de Parâmetos ' +
                       ' entre as telas, os Métodos InitState() e SetState(), utilização de Container, Column, Row (propriedades específicas do Flutter), ' +
                       ' além das Estruturas de Programação, como Métodos, Vetores e a manipulação das Variáveis.',
